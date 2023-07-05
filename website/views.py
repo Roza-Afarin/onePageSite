@@ -4,8 +4,6 @@ from django.shortcuts import render
 def home_index(request):
     return render(request,'index.html')
 
-def kitchensink_index(request):
-    return render(request,'kitchensink.html')
 
 def content_index(request):
     return render(request,'content.html')
