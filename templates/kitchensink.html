@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html class="h-100" lang="en">
 
@@ -5,15 +6,15 @@
       <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href=".t/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{% static 'img/favicon.png' %}">
   <meta name="author" content="Holger Koenemann">
   <meta name="generator" content="Eleventy v2.0.0">
   <meta name="HandheldFriendly" content="true">
   <title>Kitchensink</title>
-  <link rel="stylesheet" href="css/theme.min.css">
+  <link rel="stylesheet" href="{% static 'css/theme.min.css' %}">
 
    <style>
 
@@ -55,11 +56,11 @@
 
     <nav id="navScroll" class="navbar navbar-expand-lg navbar-light" tabindex="0">
   <div class="container">
-    <a class="navbar-brand pe-4 fs-4" href="/">
+    <a class="navbar-brand pe-4 fs-4" href="{% url 'website:kitchensink'%}">
   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
     <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
   </svg>
-  <span class="ms-1 fw-bolder">Stride</span>
+  <span class="ms-1 fw-bolder" href="{% url 'website:kitchensink'%}">Stride</span>
 </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,33 +69,31 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-    <a class="nav-link" href="#services" aria-label="Brings you to the frontpage">
+
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'website:kitchensink'%}">
       Services
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#aboutus">
-      About us
+    <a class="nav-link" href="{% url 'website:content'%}">
+      Content
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#numbers">
-      Numbers
+    <a class="nav-link" href="{% url 'website:pricing'%}">
+      Pricing
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#gallery">
-      Gallery
+    <a class="nav-link" href="{% url 'website:register'%}">
+      Register
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#workwithus">
-      Work with us
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#testimonials">
-      Testimonials
+    <a class="nav-link" href="{% url 'website:terms'%}">
+      Terms
     </a>
   </li>
 
@@ -809,23 +808,23 @@
     <div class="col-12">
       <div class="row vw-100 px-0 py-vh-5 d-flex align-items-center scrollx">
         <div class="col-md-2" data-aos="fade-up">
-            <img src="img/webp/interior37.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+            <img src="{% static 'img/webp/interior37.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
         </div>
 
         <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
-            <img src="img/webp/people1.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="1164" height="776">
+            <img src="{% static 'img/webp/people1.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="1164" height="776">
         </div>
 
         <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
-            <img src="img/webp/people2.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="1054">
+            <img src="{% static 'img/webp/people2.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="1054">
         </div>
 
         <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
-            <img src="img/webp/interior29.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="562">
+            <img src="{% static 'img/webp/interior29.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="562">
         </div>
 
         <div class="col-md-2" data-aos="fade-up" data-aos-delay="800">
-            <img src="img/webp/people23.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+            <img src="{% static 'img/webp/people23.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
         </div>
       </div>
     </div>
@@ -869,7 +868,7 @@
       <div class="col-4 d-flex justify-content-between border shadow p-4 rounded">
   <div class="row">
     <div class="col-md-4 position-relative">
-      <img src="/img/person2.jpg" class="img-fluid rounded-circle">
+      <img src="{% static 'img/person2.jpg" class="img-fluid rounded-circle">
       <span class="position-absolute top-0 end-25 translate-middle px-1 bg-info border border-light rounded-circle text-white mt-4">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewbox="0 0 16 16">
           <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -1245,15 +1244,15 @@
     <div class="col-lg-6">
       <div class="row gx-4">
         <div class="col-5 aos-init aos-animate mt-5" data-aos="fade-right" data-aos-duration="500">
-          <img src="/img/person4.jpg" class="img-fluid shadow rounded">
+          <img src="{% static 'img/person4.jpg" class="img-fluid shadow rounded">
         </div>
         <div class="col-7">
           <div class="row gx-4">
             <div class="col-12 aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
-              <img src="/img/person1.jpg" class="img-fluid shadow rounded">
+              <img src="{% static 'img/person1.jpg' %}" class="img-fluid shadow rounded">
             </div>
             <div class="col-7 mt-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">
-              <img src="/img/person2.jpg" class="img-fluid shadow rounded">
+              <img src="{% static 'img/person2.jpg' %}" class="img-fluid shadow rounded">
             </div>
           </div>
         </div>
@@ -1316,7 +1315,7 @@
   <div class="row py-vh-4 d-flex justify-content-center">
       <div class="col-lg-10 col-xl-8">
   <blockquote class="text-center">
-    <img src="/img/person1.jpg" width="64" class="img-fluid rounded-circle" data-aos="fade-up" data-aos-duration="250">
+    <img src="{% static 'img/person1.jpg' %}" width="64" class="img-fluid rounded-circle" data-aos="fade-up" data-aos-duration="250">
     <h4 class="fs-1 my-3 fw-light" data-aos="fade">“Wow. Thats the only thing I can say. Just wow. Oh and thank you of course!”</h4>
     <footer class="blockquote-footer mt-2" data-aos="fade-up" data-aos-duration="500">
       <span><span class="fw-bold">Jane Doe,</span>
@@ -1334,7 +1333,7 @@
   <blockquote>
     <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3">“I´am the CEO of this company. So maybe you think "he will tell us something super awesome about it only". But no. Its a really strange place to work with creepy people all around.
       They do some computer stuff I don´t understand. But I wear expensive Glasses and a Patagonia Hoodie. So I´am fine with it.”</div>
-    <img src="img/webp/person11.webp" width="64" height="64" class="img-fluid rounded-circle me-3" alt="" data-aos="fade">
+    <img src="{% static 'img/webp/person11.webp" width="64" height="64" class="img-fluid rounded-circle me-3" alt="" data-aos="fade">
     <span><span class="fw-bold">John Doe,</span>
       CEO of Stride Ltd.</span>
   </blockquote>
@@ -1416,8 +1415,8 @@
 </div>
 </footer>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/aos.js"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/aos.js' %}"></script>
  <script>
  AOS.init({
    duration: 800, // values from 0 to 3000, with step 50ms
